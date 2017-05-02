@@ -1,0 +1,131 @@
+body {
+    font-size: 16px;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+body>.item {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px dashed #ccc;
+}
+
+.item .header {
+    padding: .5em 0;
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+.item .content {
+    padding: 1em;
+}
+
+.multiple-borders {
+    background: yellowgreen;
+    box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, .6);
+    height: 100px;
+    width: 200px;
+}
+
+.inner-rounding {
+    width: 200px;
+    background: tan;
+    border-radius: .8em;
+    padding: 1em;
+    box-shadow: 0 0 0 .4em #655;
+    outline: .6em solid #655;
+    color: white;
+}
+
+.horizontal-stripes {
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-size: 100% 30px;
+}
+
+.vertical-stripes {
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(90deg, #fb3 50%, #58a 50%);
+    background-size: 30px 100%;
+}
+
+.diagonal-stripes {
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+    background-size: 30px 30px;
+}
+
+.tablecloth {
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0), linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0);
+    background-size: 30px 30px;
+}
+
+.blueprint {
+    width: 200px;
+    height: 150px;
+    background-color: #58a;
+    background-image: linear-gradient(90deg, white 2px, transparent 0), linear-gradient(white 2px, transparent 0), linear-gradient(hsla(0, 0%, 100%, .3) 1px, transparent 0), linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+}
+
+.polka {
+    width: 200px;
+    height: 150px;
+    background-color: #655;
+    background-image: radial-gradient(tan 20%, transparent 0), radial-gradient(tan 20%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+}
+
+.checkerboard {
+    width: 200px;
+    height: 150px;
+    background-color: #eee;
+    background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0), linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 0 0, 15px -15px, -15px 15px;
+}
+
+.cicada-stripes {
+    width: 200px;
+    height: 150px;
+    background: hsl(20, 40%, 90%);
+    background-image: linear-gradient(90deg, #fb3 10px, transparent 0), linear-gradient(90deg, #ab4 20px, transparent 0), linear-gradient(90deg, #655, 40px, transparent 0);
+    background-size: 81px 100%, 61px 100%, 41px 100%;
+}
+
+.vintage-envelope {
+    padding: 1em;
+    border: 16px solid transparent;
+    border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+    max-width: 20em;
+}
+
+@keyframes ants {
+    to {background-position: 100% 100%}
+}
+
+.marching-ants {
+    padding: 1em;
+    max-width: 20em;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%) 0 / .6em .6em;
+    animation: ants 12s linear infinite;
+}
+
+.footnote {
+    border-top: .2em solid transparent;
+    border-image: 100% 0 0 linear-gradient(90deg, currentColor 4em, transparent 0);
+    padding-top: 1em;
+}
